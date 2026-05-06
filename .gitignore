@@ -8,3 +8,6 @@
 *.cf-dump
 *.cf.elab
 *.cf.analyze
+
+# Screenshots von Ergebnissen
+*.jpg
