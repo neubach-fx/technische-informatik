@@ -1,0 +1,10 @@
+# GHDL‑Artefakte
+*.cf
+*.o
+*.ghw
+*.vcd
+*.smo
+*.cf
+*.cf-dump
+*.cf.elab
+*.cf.analyze
