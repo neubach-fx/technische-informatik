@@ -13,6 +13,8 @@ end ampel;
 architecture behave of ampel is
     signal state, next_state: unsigned(3 downto 0);
 begin
+	-- Realisierung als 3-Prozess-Architektur
+	
     transition_logic: process (state)
 	begin
 		next_state <= state + 1;
