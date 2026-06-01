@@ -42,84 +42,50 @@ begin
 		case state is
 			when "0000" =>
 				rot_h   <= '1';
-				gelb_h  <= '0'; 
-				gruen_h <= '0';
 				
 				rot_n   <= '1';
-				gelb_n  <= '0'; 
-				gruen_n <= '0';
 				
 			when "0001" =>
 				rot_h   <= '1';
-				gelb_h  <= '1'; 
-				gruen_h <= '0';
+				gelb_h  <= '1';
 				
 				rot_n   <= '1';
-				gelb_n  <= '0'; 
-				gruen_n <= '0';
 				
 			when "0010" | "0011" | "0100" | "0101" | "0110" | "0111" | "1000" =>
-				rot_h   <= '0';
-				gelb_h  <= '0'; 
 				gruen_h <= '1';
 				
 				rot_n   <= '1';
-				gelb_n  <= '0'; 
-				gruen_n <= '0';
 				
 			when "1001" =>
-				rot_h   <= '0';
-				gelb_h  <= '1'; 
-				gruen_h <= '0';
+				gelb_h  <= '1';
 				
 				rot_n   <= '1';
-				gelb_n  <= '0'; 
-				gruen_n <= '0';
 				
 			when "1010" =>
 				rot_h   <= '1';
-				gelb_h  <= '0'; 
-				gruen_h <= '0';
 				
 				rot_n   <= '1';
-				gelb_n  <= '0'; 
-				gruen_n <= '0';
 				
 			when "1011" =>
 				rot_h   <= '1';
-				gelb_h  <= '0'; 
-				gruen_h <= '0';
 				
 				rot_n   <= '1';
-				gelb_n  <= '1'; 
-				gruen_n <= '0';
+				gelb_n  <= '1';
 				
 			when "1100" | "1101" | "1110" =>
 				rot_h   <= '1';
-				gelb_h  <= '0'; 
-				gruen_h <= '0';
 				
-				rot_n   <= '0';
-				gelb_n  <= '0'; 
 				gruen_n <= '1';
 				
 			when "1111" =>
 				rot_h   <= '1';
-				gelb_h  <= '0'; 
-				gruen_h <= '0';
 				
-				rot_n   <= '0';
-				gelb_n  <= '1'; 
-				gruen_n <= '0';
+				gelb_n  <= '1';
 				
 			when others =>
 				rot_h   <= '1';
-				gelb_h  <= '0'; 
-				gruen_h <= '0';
 				
 				rot_n   <= '1';
-				gelb_n  <= '0'; 
-				gruen_n <= '0';
 				
 		end case;
 	end process output_logic;
