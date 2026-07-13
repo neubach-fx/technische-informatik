@@ -30,7 +30,6 @@ a_nicht_groesser_b:
 SUBU $s2, $s2, $s1                 # $s2 = $s2 - $s1
 
 if_zuende:
-
 J loop
 ADDU $s0, $zero, $s0               # NOP für Delayslot
 
